@@ -1,4 +1,4 @@
-package hahmadfaiq21.beginner.commonview
+package hahmadfaiq21.beginner.commonview.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -1,4 +1,4 @@
-package hahmadfaiq21.beginner.commonview
+package hahmadfaiq21.beginner.commonview.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import hahmadfaiq21.beginner.commonview.R
+import hahmadfaiq21.beginner.commonview.data.ItemView
 
 class ListViewAdapter(private val listView: ArrayList<ItemView>): RecyclerView.Adapter<ListViewAdapter.ListViewHolder>() {
 

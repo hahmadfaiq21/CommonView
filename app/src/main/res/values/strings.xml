@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">CommonView</string>
-    <string name="common_view">CommonView</string>
+
     <string name="common_view_intro">View is a basic component that appears on the screen and can be used to interact with the user. The following are examples of the most commonly used derived components of View.</string>
+
     <string name="views_name">Nama View</string>
-    <string name="logo">CommonView logo</string>
+    <string name="image_view">Image View</string>
+
+    <string name="text_view_description">TextView is a basic user interface element that displays text to the user.</string>
+
+    <string name="xml">XML</string>
+    <string name="text_view_xml">Text View XML</string>
+    <string name="result">Result:</string>
+    <string name="hello">Hello</string>
 
     <string-array name="data_name">
         <item>TextView</item>
