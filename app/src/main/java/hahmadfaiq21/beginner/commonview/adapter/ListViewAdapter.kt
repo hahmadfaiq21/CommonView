@@ -7,9 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import hahmadfaiq21.beginner.commonview.R
-import hahmadfaiq21.beginner.commonview.data.ItemView
+import hahmadfaiq21.beginner.commonview.data.ItemViews
 
-class ListViewAdapter(private val listView: ArrayList<ItemView>): RecyclerView.Adapter<ListViewAdapter.ListViewHolder>() {
+class ListViewAdapter(private val listView: ArrayList<ItemViews>): RecyclerView.Adapter<ListViewAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
@@ -18,7 +18,7 @@ class ListViewAdapter(private val listView: ArrayList<ItemView>): RecyclerView.A
     }
 
     interface OnItemClickCallback {
-        fun onItemClicked(data: ItemView)
+        fun onItemClicked(data: ItemViews)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {

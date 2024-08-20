@@ -9,13 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import hahmadfaiq21.beginner.commonview.R
 import hahmadfaiq21.beginner.commonview.ui.views.TextViewActivity
 import hahmadfaiq21.beginner.commonview.adapter.ListViewAdapter
-import hahmadfaiq21.beginner.commonview.data.ItemView
+import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val list = ArrayList<ItemView>()
+    private val list = ArrayList<ItemViews>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         val listViewAdapter = ListViewAdapter(list)
         binding.rvViews.adapter = listViewAdapter
         listViewAdapter.setOnItemClickCallback(object : ListViewAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: ItemView) {
+            override fun onItemClicked(data: ItemViews) {
                 when (data.name) {
                     resources.getStringArray(R.array.data_name)[0] -> {
                         Intent(this@MainActivity, TextViewActivity::class.java).also {
@@ -51,15 +51,18 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun getListViews(): ArrayList<ItemView> {
+    private fun getListViews(): ArrayList<ItemViews> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
-        val listViews = ArrayList<ItemView>()
+        val listViews = ArrayList<ItemViews>()
+
         for (i in dataName.indices) {
-        val viewItems = ItemView(dataName[i], dataPhoto.getResourceId(i, -1))
+            val viewItems = ItemViews(dataName[i], dataPhoto.getResourceId(i, -1))
             listViews.add(viewItems)
         }
+
         dataPhoto.recycle()
         return listViews
     }
+
 }

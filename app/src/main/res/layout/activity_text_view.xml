@@ -68,13 +68,12 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_result_holder"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/hello"
+            android:text="@string/hello_world"
             android:textSize="20sp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_gravity="center"
+            android:padding="16dp" />
     </LinearLayout>
 </ScrollView>

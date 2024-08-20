@@ -6,12 +6,12 @@
     <string name="views_name">Nama View</string>
     <string name="image_view">Image View</string>
 
-    <string name="text_view_description">TextView is a basic user interface element that displays text to the user.</string>
+    <string name="text_view_description">TextView is a basic user interface element that displays text to the user. It is one of the most basic and commonly used views in Android development. Below are some key points and examples related to TextView:</string>
 
     <string name="xml">XML</string>
     <string name="text_view_xml">Text View XML</string>
     <string name="result">Result:</string>
-    <string name="hello">Hello</string>
+    <string name="hello_world">Hello, World!</string>
 
     <string-array name="data_name">
         <item>TextView</item>

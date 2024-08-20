@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CommonView"
+        android:theme="@style/Base.Theme.CommonView"
         tools:targetApi="31">
         <activity
             android:name=".ui.views.TextViewActivity"
