@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CommonView</string>
+    <string name="common_view">CommonView</string>
+    <string name="common_view_intro">View is a basic component that appears on the screen and can be used to interact with the user. The following are examples of the most commonly used derived components of View.</string>
+    <string name="views_name">Nama View</string>
+    <string name="logo">CommonView logo</string>
+
+    <string-array name="data_name">
+        <item>TextView</item>
+        <item>ImageView</item>
+        <item>Button</item>
+        <item>EditText</item>
+        <item>Spinner</item>
+        <item>CheckBox</item>
+        <item>RadioButton</item>
+        <item>Switch</item>
+        <item>SeekBar</item>
+        <item>ProgressBar</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/textview</item>
+        <item>@drawable/imageview</item>
+        <item>@drawable/button</item>
+        <item>@drawable/edittext</item>
+        <item>@drawable/spinner</item>
+        <item>@drawable/checkbox</item>
+        <item>@drawable/radiobutton</item>
+        <item>@drawable/switchbar</item>
+        <item>@drawable/seekbar</item>
+        <item>@drawable/progressbar</item>
+    </integer-array>
+</resources>
