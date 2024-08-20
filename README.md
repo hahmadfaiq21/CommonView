@@ -1,2 +1,23 @@
 # CommonView
-The View class is a fundamental building block of the Android user interface (UI). 
+The **View** class is a fundamental building block of the Android user interface (UI). It serves as the superclass for various GUI components, including **TextView**, **ImageView**, and **Button**. Here are some key points about **View**:
+
+1. **Definition**: A **View** represents a rectangular area on the screen that displays content, such as text, images, or buttons. Although the rectangle is invisible, each View occupies a specific space. The size of this rectangle can be set manually or using predefined values: <br>
+a. **match_parent**: Occupies the entire available space on the device display. <br>
+b. **wrap_content**: Occupies only the necessary space for its content to display. <br>
+2. **Attributes**: When defining a **View** in XML, you’ll use attributes to specify how it should appear on the screen. Two essential attributes are: <br>
+a. **android:layout_height**: Determines the height of the **View**. <br>
+b. **android:layout_width**: Sets the width of the **View**. <br>
+3. **Widgets**: Any visual and interactive element visible on the screen is called a **Widget**. Views are also known as widgets in Android.
+4. **XML Syntax**: To create a **View**, you’ll define it in XML files. The format for each **View** is as follows:
+
+```XML
+<ViewName
+    Attribute1="Value1"
+    Attribute2="Value2"
+    ...
+    AttributeN="ValueN" />
+```
+Replace **ViewName** with the specific **View** type (e.g., **TextView**, **ImageView**). Attributes control the appearance and behavior of the **View**.
+More: https://developer.android.com/reference/android/view/View
+
+This project is a simple implementation using **RecyclerView** to introduce **View** class commonly used in **Android Development**.
