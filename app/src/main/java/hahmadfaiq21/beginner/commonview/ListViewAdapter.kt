@@ -9,6 +9,16 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ListViewAdapter(private val listView: ArrayList<ItemView>): RecyclerView.Adapter<ListViewAdapter.ListViewHolder>() {
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: ItemView)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_view, parent, false)
         return ListViewHolder(view)
@@ -20,6 +30,7 @@ class ListViewAdapter(private val listView: ArrayList<ItemView>): RecyclerView.A
         val (name, photo) = listView[position]
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
+        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listView[holder.adapterPosition]) }
     }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

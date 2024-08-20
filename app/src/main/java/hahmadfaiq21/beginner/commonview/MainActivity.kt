@@ -1,7 +1,10 @@
 package hahmadfaiq21.beginner.commonview
 
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -13,15 +16,32 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         rvViews = findViewById(R.id.rv_views)
         rvViews.setHasFixedSize(true)
         list.addAll(getListViews())
         showRecyclerList()
+
+        if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            rvViews.layoutManager = GridLayoutManager(this, 2)
+        } else {
+            rvViews.layoutManager = LinearLayoutManager(this)
+        }
     }
 
     private fun showRecyclerList() {
         rvViews.layoutManager = LinearLayoutManager(this)
-        rvViews.adapter = ListViewAdapter(list)
+        val listViewAdapter = ListViewAdapter(list)
+        rvViews.adapter = listViewAdapter
+        listViewAdapter.setOnItemClickCallback(object : ListViewAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: ItemView) {
+                showSelectedView(data)
+            }
+        })
+    }
+
+    private fun showSelectedView(view: ItemView) {
+        Toast.makeText(this, "Kamu memilih " + view.name, Toast.LENGTH_SHORT).show()
     }
 
     private fun getListViews(): ArrayList<ItemView> {
