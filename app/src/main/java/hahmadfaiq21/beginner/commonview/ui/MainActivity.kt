@@ -11,6 +11,7 @@ import hahmadfaiq21.beginner.commonview.ui.views.TextViewActivity
 import hahmadfaiq21.beginner.commonview.adapter.ListViewAdapter
 import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityMainBinding
+import hahmadfaiq21.beginner.commonview.ui.views.ImageViewActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,6 +44,12 @@ class MainActivity : AppCompatActivity() {
                     resources.getStringArray(R.array.data_name)[0] -> {
                         Intent(this@MainActivity, TextViewActivity::class.java).also {
                             it.putExtra(TextViewActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[1] -> {
+                        Intent(this@MainActivity, ImageViewActivity::class.java).also {
+                            it.putExtra(ImageViewActivity.EXTRA_DATA, data)
                             startActivity(it)
                         }
                     }

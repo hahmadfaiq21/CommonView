@@ -7,6 +7,7 @@
     <string name="image_view">Image View</string>
 
     <string name="text_view_description">TextView is a basic user interface element that displays text to the user. It is one of the most basic and commonly used views in Android development. Below are some key points and examples related to TextView:</string>
+    <string name="image_view_description">ImageView  is a UI component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
 
     <string name="xml">XML</string>
     <string name="text_view_xml">Text View XML</string>

@@ -3,19 +3,19 @@ package hahmadfaiq21.beginner.commonview.ui.views
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import hahmadfaiq21.beginner.commonview.data.ItemViews
-import hahmadfaiq21.beginner.commonview.databinding.ActivityTextViewBinding
+import hahmadfaiq21.beginner.commonview.databinding.ActivityImageViewBinding
 
-class TextViewActivity : AppCompatActivity() {
+class ImageViewActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityTextViewBinding
+    private lateinit var binding: ActivityImageViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTextViewBinding.inflate(layoutInflater)
+        binding = ActivityImageViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         @Suppress("DEPRECATION")
-        val data = intent.getParcelableExtra<ItemViews>(EXTRA_DATA) as ItemViews
+        val data = intent.getParcelableExtra<ItemViews>(TextViewActivity.EXTRA_DATA) as ItemViews
         data.let {
             binding.ivImage.setImageResource(it.photo)
             binding.tvTitle.text = it.name

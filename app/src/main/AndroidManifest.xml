@@ -13,6 +13,9 @@
         android:theme="@style/Base.Theme.CommonView"
         tools:targetApi="31">
         <activity
+            android:name=".ui.views.ImageViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.views.TextViewActivity"
             android:exported="false" />
         <activity
