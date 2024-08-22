@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.ImageViewActivity">
+    tools:context=".ui.views.ButtonActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/image_view_description"
+            android:text="@string/button_description"
             android:textAlignment="center"
             android:textSize="18sp"
             android:layout_marginTop="8dp" />
@@ -55,8 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:layout_marginTop="12dp"
-            android:contentDescription="@string/image_view_xml"
-            android:src="@drawable/imageview_xml" />
+            android:contentDescription="@string/button_xml"
+            android:src="@drawable/button_xml" />
 
         <TextView
             android:id="@+id/tv_result"
@@ -68,14 +68,13 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+        <Button
+            android:id="@+id/button"
             android:layout_gravity="center"
-            android:contentDescription="@string/image_view"
-            android:padding="8dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/android_logo" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text"
+            android:textSize="20sp"
+            android:layout_margin="12dp"/>
     </LinearLayout>
 </ScrollView>

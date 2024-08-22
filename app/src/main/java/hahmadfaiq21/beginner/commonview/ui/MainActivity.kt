@@ -11,6 +11,7 @@ import hahmadfaiq21.beginner.commonview.ui.views.TextViewActivity
 import hahmadfaiq21.beginner.commonview.adapter.ListViewAdapter
 import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityMainBinding
+import hahmadfaiq21.beginner.commonview.ui.views.ButtonActivity
 import hahmadfaiq21.beginner.commonview.ui.views.ImageViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +51,12 @@ class MainActivity : AppCompatActivity() {
                     resources.getStringArray(R.array.data_name)[1] -> {
                         Intent(this@MainActivity, ImageViewActivity::class.java).also {
                             it.putExtra(ImageViewActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[2] -> {
+                        Intent(this@MainActivity, ButtonActivity::class.java).also {
+                            it.putExtra(ButtonActivity.EXTRA_DATA, data)
                             startActivity(it)
                         }
                     }

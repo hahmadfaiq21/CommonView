@@ -10,9 +10,13 @@
     <string name="image_view_description">ImageView  is a UI component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
 
     <string name="xml">XML</string>
-    <string name="text_view_xml">Text View XML</string>
+    <string name="text_view_xml">TextView XML</string>
+    <string name="image_view_xml">ImageView XML</string>
+    <string name="button_xml">Button XML</string>
     <string name="result">Result:</string>
     <string name="hello_world">Hello, World!</string>
+    <string name="button_text">Click Me</string>
+    <string name="button_description">Button is a UI component that the user can tap to perform an action, such as submitting a form, navigating to another screen, or triggering some other event. Buttons are highly customizable and can include text, images, or a combination of both.</string>
 
     <string-array name="data_name">
         <item>TextView</item>
