@@ -2,11 +2,7 @@ package hahmadfaiq21.beginner.commonview.ui.views
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import hahmadfaiq21.beginner.commonview.R
 import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityButtonBinding
 
