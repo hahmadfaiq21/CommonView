@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.TextViewActivity">
+    tools:context=".ui.views.SpinnerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,10 +35,10 @@
             android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_view_description"
+            android:layout_marginTop="8dp"
+            android:text="@string/checkbox_description"
             android:textAlignment="center"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,14 +51,14 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:contentDescription="@string/text_view_xml"
-            android:src="@drawable/textview_xml" />
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/checkbox_xml"
+            android:src="@drawable/checkbox_xml" />
 
         <TextView
-            android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -67,13 +67,23 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView"
+
+        <CheckBox
+            android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:padding="16dp" />
+            android:textSize="20sp"
+            android:text="@string/checkbox_text"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/checkbox_holder"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>

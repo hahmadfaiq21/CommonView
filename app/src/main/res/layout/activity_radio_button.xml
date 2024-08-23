@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.TextViewActivity">
+    tools:context=".ui.views.SpinnerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,10 +35,10 @@
             android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_view_description"
+            android:layout_marginTop="8dp"
+            android:text="@string/radiobutton_description"
             android:textAlignment="center"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,13 +52,13 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="350dp"
             android:layout_gravity="center"
-            android:contentDescription="@string/text_view_xml"
-            android:src="@drawable/textview_xml" />
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/radiobutton_xml"
+            android:src="@drawable/radiobutton_xml" />
 
         <TextView
-            android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -68,12 +68,45 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:padding="16dp" />
+            android:layout_marginTop="16dp"
+            android:text="@string/radiobutton_text"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/radiobutton_holder"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>

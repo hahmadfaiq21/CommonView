@@ -3,15 +3,15 @@ package hahmadfaiq21.beginner.commonview.ui.views
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import hahmadfaiq21.beginner.commonview.data.ItemViews
-import hahmadfaiq21.beginner.commonview.databinding.ActivityImageViewBinding
+import hahmadfaiq21.beginner.commonview.databinding.ActivityCheckBoxBinding
 
-class ImageViewActivity : AppCompatActivity() {
+class CheckBoxActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityImageViewBinding
+    private lateinit var binding: ActivityCheckBoxBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityImageViewBinding.inflate(layoutInflater)
+        binding = ActivityCheckBoxBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         @Suppress("DEPRECATION")
@@ -19,6 +19,10 @@ class ImageViewActivity : AppCompatActivity() {
         data.let {
             binding.ivImage.setImageResource(it.photo)
             binding.tvTitle.text = it.name
+        }
+
+        binding.checkBox.setOnCheckedChangeListener { _, isChecked ->
+            binding.tvResult.text = if (isChecked) "You already checked" else "Unchecked"
         }
     }
 

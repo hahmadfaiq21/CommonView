@@ -7,10 +7,12 @@
     <string name="image_view">Image View</string>
 
     <string name="text_view_description">TextView is a basic user interface element that displays text to the user. It is one of the most basic and commonly used views in Android development. Below are some key points and examples related to TextView:</string>
-    <string name="image_view_description">ImageView  is a UI component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
-    <string name="button_description">Button is a UI component that the user can tap to perform an action, such as submitting a form, navigating to another screen, or triggering some other event. Buttons are highly customizable and can include text, images, or a combination of both.</string>
-    <string name="edit_text_description">EditText in Android is a UI component that allows users to enter and edit text. It is commonly used in forms, search fields, and other areas where text input is required. EditText extends the TextView class, providing additional functionality for user input.</string>
-    <string name="spinner_description">Spinner is a dropdown list that allows users to select an item from a set of options. It’s similar to a dropdown menu in HTML. Spinner is useful when you have a list of options that don’t take up much space on the screen.</string>
+    <string name="image_view_description">ImageView  is an UI component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
+    <string name="button_description">Button is an UI component that the user can tap to perform an action, such as submitting a form, navigating to another screen, or triggering some other event. Buttons are highly customizable and can include text, images, or a combination of both.</string>
+    <string name="edit_text_description">EditText is an UI component that allows users to enter and edit text. It is commonly used in forms, search fields, and other areas where text input is required. EditText extends the TextView class, providing additional functionality for user input.</string>
+    <string name="spinner_description">Spinner is an dropdown list that allows users to select an item from a set of options. It’s similar to a dropdown menu in HTML. Spinner is useful when you have a list of options that don’t take up much space on the screen.</string>
+    <string name="checkbox_description">CheckBox is an UI component that allows users to select or deselect an option. It represents a two-state button that can be either checked or unchecked. CheckBox is commonly used in forms, settings screens, or anywhere multiple selections need to be made.</string>
+    <string name="radiobutton_description">RadioButton is an UI component that allows users to select one option from a set of mutually exclusive options. Typically, RadioButtons are used within a RadioGroup, which ensures that only one button in the group can be selected at a time.</string>
 
     <string name="xml">XML</string>
     <string name="text_view_xml">TextView XML</string>
@@ -24,12 +26,21 @@
     <string name="show_result">Show Result</string>
     <string name="result_holder">Your result will be appear here</string>
     <string name="spinner_xml">Spinner XML</string>
+    <string name="checkbox_text">Check here</string>
+    <string name="checkbox_holder">You don\'t checked the box yet</string>
+    <string name="radiobutton_text">Choose an option:</string>
+    <string name="radiobutton_holder">You don\'t choose an option yet</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="checkbox_xml">CheckBox XML</string>
+    <string name="radiobutton_xml">RadioButton XML</string>
 
     <string-array name="spinner_items">
-        <item>Up</item>
-        <item>Down</item>
-        <item>Left</item>
-        <item>Right</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
     </string-array>
 
     <string-array name="data_name">

@@ -12,8 +12,10 @@ import hahmadfaiq21.beginner.commonview.adapter.ListViewAdapter
 import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityMainBinding
 import hahmadfaiq21.beginner.commonview.ui.views.ButtonActivity
+import hahmadfaiq21.beginner.commonview.ui.views.CheckBoxActivity
 import hahmadfaiq21.beginner.commonview.ui.views.EditTextActivity
 import hahmadfaiq21.beginner.commonview.ui.views.ImageViewActivity
+import hahmadfaiq21.beginner.commonview.ui.views.RadioButtonActivity
 import hahmadfaiq21.beginner.commonview.ui.views.SpinnerActivity
 
 class MainActivity : AppCompatActivity() {
@@ -71,6 +73,18 @@ class MainActivity : AppCompatActivity() {
                     resources.getStringArray(R.array.data_name)[4] -> {
                         Intent(this@MainActivity, SpinnerActivity::class.java).also {
                             it.putExtra(SpinnerActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[5] -> {
+                        Intent(this@MainActivity, CheckBoxActivity::class.java).also {
+                            it.putExtra(CheckBoxActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[6] -> {
+                        Intent(this@MainActivity, RadioButtonActivity::class.java).also {
+                            it.putExtra(RadioButtonActivity.EXTRA_DATA, data)
                             startActivity(it)
                         }
                     }

@@ -15,7 +15,7 @@ class EditTextActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         @Suppress("DEPRECATION")
-        val data = intent.getParcelableExtra<ItemViews>(ButtonActivity.EXTRA_DATA) as ItemViews
+        val data = intent.getParcelableExtra<ItemViews>(EXTRA_DATA) as ItemViews
         data.let {
             binding.ivImage.setImageResource(it.photo)
             binding.tvTitle.text = it.name
