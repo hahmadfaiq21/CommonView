@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import hahmadfaiq21.beginner.commonview.data.ItemViews
 import hahmadfaiq21.beginner.commonview.databinding.ActivityProgressBarBinding
-import hahmadfaiq21.beginner.commonview.ui.views.SeekBarActivity.Companion
 
 class ProgressBarActivity : AppCompatActivity() {
 
