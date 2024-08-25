@@ -6,41 +6,51 @@
     <string name="views_name">View Name</string>
     <string name="image_view">Image View</string>
 
-    <string name="text_view_description">TextView is a basic user interface element that displays text to the user. It is one of the most basic and commonly used views in Android development. Below are some key points and examples related to TextView:</string>
-    <string name="image_view_description">ImageView  is an UI component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
-    <string name="button_description">Button is an UI component that the user can tap to perform an action, such as submitting a form, navigating to another screen, or triggering some other event. Buttons are highly customizable and can include text, images, or a combination of both.</string>
-    <string name="edit_text_description">EditText is an UI component that allows users to enter and edit text. It is commonly used in forms, search fields, and other areas where text input is required. EditText extends the TextView class, providing additional functionality for user input.</string>
+    <string name="text_view_description">TextView is a basic user interface (UI) element that displays text to the user. It is one of the most basic and commonly used views in Android development. Below are some key points and examples related to TextView:</string>
+    <string name="image_view_description">ImageView  is an user interface (UI) component used to display images to the user. It can display images from various sources, such as drawable resources, files, or URLs. Here are some details and examples for working with ImageView:</string>
+    <string name="button_description">Button is an user interface (UI) component that the user can tap to perform an action, such as submitting a form, navigating to another screen, or triggering some other event. Buttons are highly customizable and can include text, images, or a combination of both.</string>
+    <string name="edit_text_description">EditText is an user interface (UI) component that allows users to enter and edit text. It is commonly used in forms, search fields, and other areas where text input is required. EditText extends the TextView class, providing additional functionality for user input.</string>
     <string name="spinner_description">Spinner is an dropdown list that allows users to select an item from a set of options. It’s similar to a dropdown menu in HTML. Spinner is useful when you have a list of options that don’t take up much space on the screen.</string>
-    <string name="checkbox_description">CheckBox is an UI component that allows users to select or deselect an option. It represents a two-state button that can be either checked or unchecked. CheckBox is commonly used in forms, settings screens, or anywhere multiple selections need to be made.</string>
-    <string name="radiobutton_description">RadioButton is an UI component that allows users to select one option from a set of mutually exclusive options. Typically, RadioButtons are used within a RadioGroup, which ensures that only one button in the group can be selected at a time.</string>
+    <string name="checkbox_description">CheckBox is an user interface (UI) component that allows users to select or deselect an option. It represents a two-state button that can be either checked or unchecked. CheckBox is commonly used in forms, settings screens, or anywhere multiple selections need to be made.</string>
+    <string name="radiobutton_description">RadioButton is an user interface (UI) component that allows users to select one option from a set of mutually exclusive options. Typically, RadioButtons are used within a RadioGroup, which ensures that only one button in the group can be selected at a time.</string>
+    <string name="switch_description">Switch is a two-state toggle button that allows the user to choose between two options: ON and OFF. It’s commonly used in settings screens to enable or disable a particular feature.</string>
+    <string name="seekbar_description">SeekBar is an user interface (UI) element that allows users to select a value from a continuous range by sliding a thumb along a horizontal track. It\'s commonly used for adjusting settings like volume, brightness, or other values within a specific range.</string>
 
     <string name="xml">XML</string>
     <string name="text_view_xml">TextView XML</string>
     <string name="image_view_xml">ImageView XML</string>
     <string name="button_xml">Button XML</string>
     <string name="edit_text_xml">EditText XML</string>
+    <string name="switch_xml">Switch XML</string>
+    <string name="spinner_xml">Spinner XML</string>
+    <string name="checkbox_xml">CheckBox XML</string>
+    <string name="radiobutton_xml">RadioButton XML</string>
+    <string name="seekbar_xml">SeekBar XML</string>
+
     <string name="result">Result:</string>
     <string name="hello_world">Hello, World!</string>
     <string name="button_text">Click Me</string>
     <string name="edit_text_holder">Enter your text here</string>
     <string name="show_result">Show Result</string>
     <string name="result_holder">Your result will be appear here</string>
-    <string name="spinner_xml">Spinner XML</string>
     <string name="checkbox_text">Check here</string>
-    <string name="checkbox_holder">You don\'t checked the box yet</string>
+    <string name="checkbox_holder">Check the box</string>
     <string name="radiobutton_text">Choose an option:</string>
     <string name="radiobutton_holder">You don\'t choose an option yet</string>
     <string name="option_1">Option 1</string>
     <string name="option_2">Option 2</string>
     <string name="option_3">Option 3</string>
-    <string name="checkbox_xml">CheckBox XML</string>
-    <string name="radiobutton_xml">RadioButton XML</string>
+    <string name="switch_on">The switch is ON</string>
+    <string name="switch_off">The switch is OFF</string>
+    <string name="switch_holder">Turn on the Switch</string>
+    <string name="seekBar_holder">Slide the Bar</string>
+    <string name="progressbar_description">ProgressBar is an user interface (UI) element that visualizes the progress of an operation or task. It can be displayed as a horizontal bar, a circular spinner, or even as an indeterminate indicator when the duration of the task is unknown. ProgressBar is commonly used for tasks like file downloads, installations, or loading screens.</string>
+    <string name="progressbar_xml">ProgressBar XML</string>
 
     <string-array name="spinner_items">
         <item>Item 1</item>
         <item>Item 2</item>
         <item>Item 3</item>
-        <item>Item 4</item>
     </string-array>
 
     <string-array name="data_name">

@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.CheckBoxActivity">
+    tools:context=".ui.views.SeekBarActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/checkbox_description"
+            android:text="@string/seekbar_description"
             android:textAlignment="center"
             android:textSize="18sp" />
 
@@ -51,12 +51,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
             android:layout_marginTop="12dp"
-            android:contentDescription="@string/checkbox_xml"
-            android:src="@drawable/checkbox_xml" />
+            android:contentDescription="@string/seekbar_xml"
+            android:src="@drawable/seekbar_xml" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,15 +67,13 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:max="10"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="20sp"
-            android:text="@string/checkbox_text"
-            android:checked="false" />
+            android:layout_margin="16dp" />
 
         <TextView
             android:id="@+id/tv_result"
@@ -83,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:text="@string/checkbox_holder"
+            android:text="@string/seekBar_holder"
             android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>

@@ -20,6 +20,7 @@ class RadioButtonActivity : AppCompatActivity() {
             binding.ivImage.setImageResource(it.photo)
             binding.tvTitle.text = it.name
         }
+
         binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
                 binding.radioButton1.id -> {

@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.CheckBoxActivity">
+    tools:context=".ui.views.SwitchActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/checkbox_description"
+            android:text="@string/switch_description"
             android:textAlignment="center"
             android:textSize="18sp" />
 
@@ -51,12 +51,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
             android:layout_marginTop="12dp"
-            android:contentDescription="@string/checkbox_xml"
-            android:src="@drawable/checkbox_xml" />
+            android:contentDescription="@string/switch_xml"
+            android:src="@drawable/switch_xml" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,14 +67,13 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-
-        <CheckBox
-            android:id="@+id/checkBox"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textOn="@string/switch_on"
+            android:textOff="@string/switch_off"
             android:layout_gravity="center"
-            android:textSize="20sp"
-            android:text="@string/checkbox_text"
             android:checked="false" />
 
         <TextView
@@ -83,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:text="@string/checkbox_holder"
+            android:text="@string/switch_holder"
             android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>

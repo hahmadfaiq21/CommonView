@@ -15,8 +15,11 @@ import hahmadfaiq21.beginner.commonview.ui.views.ButtonActivity
 import hahmadfaiq21.beginner.commonview.ui.views.CheckBoxActivity
 import hahmadfaiq21.beginner.commonview.ui.views.EditTextActivity
 import hahmadfaiq21.beginner.commonview.ui.views.ImageViewActivity
+import hahmadfaiq21.beginner.commonview.ui.views.ProgressBarActivity
 import hahmadfaiq21.beginner.commonview.ui.views.RadioButtonActivity
+import hahmadfaiq21.beginner.commonview.ui.views.SeekBarActivity
 import hahmadfaiq21.beginner.commonview.ui.views.SpinnerActivity
+import hahmadfaiq21.beginner.commonview.ui.views.SwitchActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -85,6 +88,24 @@ class MainActivity : AppCompatActivity() {
                     resources.getStringArray(R.array.data_name)[6] -> {
                         Intent(this@MainActivity, RadioButtonActivity::class.java).also {
                             it.putExtra(RadioButtonActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[7] -> {
+                        Intent(this@MainActivity, SwitchActivity::class.java).also {
+                            it.putExtra(SwitchActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[8] -> {
+                        Intent(this@MainActivity, SeekBarActivity::class.java).also {
+                            it.putExtra(SeekBarActivity.EXTRA_DATA, data)
+                            startActivity(it)
+                        }
+                    }
+                    resources.getStringArray(R.array.data_name)[9] -> {
+                        Intent(this@MainActivity, ProgressBarActivity::class.java).also {
+                            it.putExtra(ProgressBarActivity.EXTRA_DATA, data)
                             startActivity(it)
                         }
                     }

@@ -3,15 +3,16 @@ package hahmadfaiq21.beginner.commonview.ui.views
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import hahmadfaiq21.beginner.commonview.data.ItemViews
-import hahmadfaiq21.beginner.commonview.databinding.ActivityCheckBoxBinding
+import hahmadfaiq21.beginner.commonview.databinding.ActivityProgressBarBinding
+import hahmadfaiq21.beginner.commonview.ui.views.SeekBarActivity.Companion
 
-class CheckBoxActivity : AppCompatActivity() {
+class ProgressBarActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityCheckBoxBinding
+    private lateinit var binding: ActivityProgressBarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCheckBoxBinding.inflate(layoutInflater)
+        binding = ActivityProgressBarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         @Suppress("DEPRECATION")
@@ -19,10 +20,6 @@ class CheckBoxActivity : AppCompatActivity() {
         data.let {
             binding.ivImage.setImageResource(it.photo)
             binding.tvTitle.text = it.name
-        }
-
-        binding.checkBox.setOnCheckedChangeListener { _, isChecked ->
-            binding.tvResult.text = if (isChecked) "The box is checked" else "The box is unchecked"
         }
     }
 
