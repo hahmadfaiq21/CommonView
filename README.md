@@ -17,6 +17,15 @@ b. **android:layout_width**: Sets the width of the **View**. <br>
     ...
     AttributeN="ValueN" />
 ```
+
+Example:
+```XML
+<TextView
+        android:id="@+id/text_view_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/hello" />
+```
 Replace **ViewName** with the specific **View** type (e.g., **TextView**, **ImageView**). Attributes control the appearance and behavior of the **View**. <br>
 More: https://developer.android.com/reference/android/view/View
 
