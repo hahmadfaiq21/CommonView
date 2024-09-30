@@ -32,7 +32,7 @@ Example:
 ```
 More: https://developer.android.com/reference/android/view/View
 
-This project is a simple implementation using **RecyclerView** to introduce **View** class commonly used in **Android Development**.
+This project is a simple implementation of **RecyclerView** to introduce **View** classes that commonly used in **Android Development**.
 
 ## User Interface (UI)
 ![Image](https://github.com/user-attachments/assets/813a79f6-af23-4df3-ad42-e05a459e1e83)
