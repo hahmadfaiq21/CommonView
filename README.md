@@ -1,4 +1,7 @@
 # CommonView
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4f4147c8-bba7-469c-936f-dd6ba203331b">
+</p>
 The **View** class is a fundamental building block of the Android user interface (UI). It serves as the superclass for various GUI components, including **TextView**, **ImageView**, and **Button**. Here are some key points about **View**:
 
 1. **Definition**: A **View** represents a rectangular area on the screen that displays content, such as text, images, or buttons. Although the rectangle is invisible, each View occupies a specific space. The size of this rectangle can be set manually or using predefined values: <br>
