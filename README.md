@@ -21,7 +21,7 @@ b. **android:layout_width**: Sets the width of the **View**. <br>
     ...
     AttributeN="ValueN" />
 ```
-
+Replace **ViewName** with the specific **View** type (e.g., **TextView**, **ImageView**). Attributes control the appearance and behavior of the **View**. <br>
 Example:
 ```XML
 <TextView
@@ -30,7 +30,6 @@ Example:
         android:layout_width="wrap_content"
         android:text="@string/hello" />
 ```
-Replace **ViewName** with the specific **View** type (e.g., **TextView**, **ImageView**). Attributes control the appearance and behavior of the **View**. <br>
 More: https://developer.android.com/reference/android/view/View
 
 This project is a simple implementation using **RecyclerView** to introduce **View** class commonly used in **Android Development**.
