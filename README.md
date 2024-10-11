@@ -1,4 +1,4 @@
-# RecyclerView of Common View Classes in Android Development
+# CommonView App: RecyclerView of Common View Classes in Android Development
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4f4147c8-bba7-469c-936f-dd6ba203331b">
 </p>
